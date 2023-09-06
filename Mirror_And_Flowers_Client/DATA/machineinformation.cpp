@@ -60,7 +60,13 @@ bool MachineInformation::UpdateMachineName()
 
 QString MachineInformation::GetMachineMac()
 {
-    return m_machineMac;
+    QString tmpStr="";
+    QStringList tmpL=m_machineMac.split(":");
+    for(int i=0;i<3;++i)
+    {
+        tmpStr+=tmpL[i];
+    }
+    return tmpStr;
 }
 
 bool MachineInformation::UpdateMachineMac()

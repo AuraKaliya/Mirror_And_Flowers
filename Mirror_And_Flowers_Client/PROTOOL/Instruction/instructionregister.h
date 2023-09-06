@@ -15,12 +15,12 @@ public:
 
 
 #define REGISTER_INSTRUCTION(insName) \
-static Instruction * createInstruction##insName() \
+static InstructionBase * CreateInstruction##insName() \
 { \
     InstructionBase* obj =new insName(); \
     return obj; \
 } \
-static InstructionRegister insRegister##insName(#insName,createInstruction##insName());
+static InstructionRegister insRegister##insName(#insName,CreateInstruction##insName());
 
 
 #endif // INSTRUCTIONREGISTER_H

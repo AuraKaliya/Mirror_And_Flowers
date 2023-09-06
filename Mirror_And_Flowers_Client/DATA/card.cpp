@@ -19,42 +19,42 @@ void Card::initCard(int ID, QString name, QString category, int ATK, int DEF, in
 
 int Card::GetID()
 {
-
+    return m_ID;
 }
 
 QString Card::GetName()
 {
-
+    return m_name;
 }
 
 QString Card::GetCategory()
 {
-
+    return m_category;
 }
 
 int Card::GetATK()
 {
-
+    return m_ATK;
 }
 
 int Card::GetDEF()
 {
-
+    return m_DEF;
 }
 
 int Card::GetDHP()
 {
-
+    return m_DHP;
 }
 
 QString Card::GetIntroduction()
 {
-
+    return m_introduction;
 }
 
 QString Card::GetImageUrl()
 {
-
+    return m_imageUrl;
 }
 
 void Card::SetID(int newID)

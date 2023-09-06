@@ -18,6 +18,12 @@ void CardHub::InitCardHub(QVector<Card *> cardList)
     }
 }
 
+void CardHub::AddCard(Card *card)
+{
+    m_idToCardDictionary[card->GetID()]=card;
+    m_nameToCardDictionary[card->GetName()]=card;
+}
+
 Card *CardHub::GetCardByID(int ID)
 {
     return m_idToCardDictionary[ID];

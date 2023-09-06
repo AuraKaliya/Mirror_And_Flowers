@@ -12,6 +12,7 @@ public:
     static CardHub* GetInstance();
 
     void InitCardHub(QVector<Card*>cardList);
+    void AddCard(Card* card);
     Card* GetCardByID(int ID);
     Card* GetCardByName(QString Name);
     QVector<Card*>GetCardListByID(QVector<int>IDList);

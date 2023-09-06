@@ -34,8 +34,9 @@ private:
     int m_ATK;
     int m_DEF;
     int m_DHP;
-    QString m_introduction;
     QString m_imageUrl;
+
+    QString m_introduction;
 };
 
 #endif // CARD_H

@@ -18,6 +18,27 @@ void CharacterHub::InitCharacterHub(QVector<Character*> characterList)
     }
 }
 
+void CharacterHub::AddCharacter(Character *character)
+{
+    m_idToCharacterDictionary[character->GetID()]=character;
+    m_nameToCharacterDictionary[character->GetName()]=character;
+
+}
+
+void CharacterHub::AddCharacter(int id, QString name, QString title, QString tachieUrl, QString introduction, int ATK, int DEF, int HP)
+{
+    Character* character=new Character();
+    character->SetID(id);
+    character->SetName(name);
+    character->SetTitle(title);
+    character->SetTachieUrl(tachieUrl);
+    character->SetIntroduction(introduction);
+    character->SetATK(ATK);
+    character->SetDEF(DEF);
+    character->SetHP(HP);
+    AddCharacter(character);
+}
+
 Character* CharacterHub::GetCharacterByID(int ID)
 {
     return m_idToCharacterDictionary[ID];
@@ -56,7 +77,17 @@ QVector<Character*> CharacterHub::GetCharacterList()
     return tmpList;
 }
 
+void CharacterHub::ChangeNowCharacter(Character *character)
+{
+    m_nowCharacter=character;
+}
+
+Character *CharacterHub::GetNowCharacter()
+{
+    return m_nowCharacter;
+}
+
 CharacterHub::CharacterHub()
 {
-
+    m_nowCharacter=nullptr;
 }
