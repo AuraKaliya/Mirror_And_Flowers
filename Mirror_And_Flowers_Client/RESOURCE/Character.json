@@ -1,0 +1,42 @@
+[
+  {
+    "ID": 101,
+    "Name": "Luwies",
+    "Title": "烈火的朱凤",
+    "Introduction": "（测试）如火一般热情的少女。",
+    "ATK": 800,
+    "DEF": 800,
+    "HP": 2400,
+    "TachieUrl": "./RESOURCE/Image_90008.png"
+  },
+  {
+    "ID": 102,
+    "Name": "Aiden",
+    "Title": "风暴的剑骑士",
+    "Introduction": "（测试）感受风暴之力的勇敢剑士。",
+    "ATK": 1000,
+    "DEF": 1200,
+    "HP": 2800,
+    "TachieUrl": "./RESOURCE/Image_90009.png"
+  },
+  {
+    "ID": 103,
+    "Name": "Evelyn",
+    "Title": "冰雪的魔法师",
+    "Introduction": "（测试）掌握冰雪魔法的神秘魔法师。",
+    "ATK": 1200,
+    "DEF": 1000,
+    "HP": 2700,
+    "TachieUrl": "./RESOURCE/Image_90010.png"
+  },
+  {
+    "ID": 104,
+    "Name": "Lucius",
+    "Title": "暗夜的刺客",
+    "Introduction": "（测试）潜行于夜晚的致命刺客。",
+    "ATK": 1500,
+    "DEF": 800,
+    "HP": 2500,
+    "TachieUrl": "./RESOURCE/Image_90011.png"
+  }
+]

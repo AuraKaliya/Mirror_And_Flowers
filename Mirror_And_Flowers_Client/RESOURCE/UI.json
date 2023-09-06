@@ -1,0 +1,192 @@
+{
+  "UIFixedWidget": [
+    {
+      "ClassName": "MainWidget",
+      "Category": "CW",
+      "Setting": {
+        "Rect": [0, 0, 1600, 900],
+        "Style": "",
+        "Title": "Mirror And Flowers",
+	"BackgroundPixUrl":"./RESOURCE/Image_90028.png"
+      },
+      "Contains": [
+        {
+          "ClassName": "HeadWidget",
+          "Category": "OW",
+          "Setting": {
+            "Rect": [0, 0, 450, 150],
+	    "Style":"color:rgb(0,0,0);font-family:楷体;font-size:25px;",
+            "BackgroundPixUrl":"./RESOURCE/Image_90024.png",
+            "LabelPixUrl":"./RESOURCE/Image_90025.png",
+            "Mask":"./RESOURCE/Image_90027.png",
+            "Init": true
+          }
+        },
+        {
+          "ClassName": "ClickLabel",
+          "Category": "OW",
+          "Setting": {
+            "Rect": [500, 0, 400, 150],
+            "Instruction": "",
+            "Title": "匹配",
+            "BackgroundPixUrl": ""
+          }
+        },
+        {
+          "ClassName": "OptionListWidget",
+          "Category": "OW",
+          "Setting": {
+            "Rect": [1000, 20, 500, 100],
+            "Init": true,
+            "LabelGroup": [
+              {
+                "LabelClass": "OpenLabel",
+                "LabelLink": "UserInfoWidget",
+                "ImageUrl": "./RESOURCE/Image_90029.png"
+              },
+              {
+                "LabelClass": "OpenLabel",
+                "LabelLink": "CharacterWidget",
+                "ImageUrl": "./RESOURCE/Image_90030.png"
+              },
+              {
+                "LabelClass": "OpenLabel",
+                "LabelLink": "CardWidget",
+                "ImageUrl": "./RESOURCE/Image_90031.png"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "UIActiveWidget": [
+    {
+      "ClassName": "UserInfoWidget",
+      "Category": "CW",
+      "Setting": {
+        "Rect": [600, 150, 450, 600],
+         "Style":"background-color:rgba(180,180,180,220);border-radius:10px;",
+        "BackgroundPixUrl":"./RESOURCE/Image_90032.png",
+        "Title": "用户信息栏"
+      },
+      "Contains": [
+        {
+          "ClassName": "HeadWidget",
+          "Category": "OW",
+          "Setting": {
+          "Rect": [0, 50, 450, 150],
+	      "Style":"color:rgb(0,0,0);font-family:楷体;font-size:25px;",
+          "BackgroundPixUrl":"./RESOURCE/Image_90024.png",
+          "Mask":"./RESOURCE/Image_90027.png",
+          "LabelPixUrl":"./RESOURCE/Image_90025.png",
+          "Init": true
+          }
+        },
+        {
+          "ClassName": "ModifyWidget",
+          "Category": "OW",
+          "Setting": {
+            "Rect": [0, 200, 450, 150],
+	    "Style":"color:white;font-family:楷体;font-size:25px;",
+            "EditBoxGroup": [
+              {
+                "LinkAttribute": "UserName",
+                "Tip": "UserName"
+              }
+            ]
+          }
+        },
+        {
+          "ClassName": "ToolWidget",
+          "Category": "OW",
+          "Setting": {
+            "Rect": [0, 0, 450, 50],
+	    "Style":"background-color:rgb(250,250,250);border-radius:10px;",
+	   "BackgroundPixUrl":"./RESOURCE/Image_90035.png",
+            "Init": true
+          }
+        }
+      ]
+    },
+    {
+      "ClassName": "CharacterWidget",
+      "Category": "CW",
+      "Setting": {
+        "Rect": [600, 400, 1300, 700],
+        "Style": "",
+	"BackgroundPixUrl":"./RESOURCE/Image_90034.png",
+        "Title": "角色信息栏"
+      },
+      "Contains": [
+        {
+          "ClassName": "ToolWidget",
+          "Category": "OW",
+          "Setting": {
+            "Rect": [0, 0, 1300, 50],
+	   "Style":"background-color:rgb(250,250,250);border-radius:10px;",
+	   "BackgroundPixUrl":"./RESOURCE/Image_90035.png",
+            "Init": true
+          }
+        },
+        {
+          "ClassName": "ViewPortWidget",
+          "Category": "OW",
+          "Setting": {
+            "Rect": [50, 50, 1200, 650],
+            "Restriction": 1200,
+            "Init": true,
+	    "Style":"background-color:rgba(0,0,0,0.1);color:rgb(255,255,255);border-radius:5px;font-family:楷体;",
+            "CharacterBoxGroup": {
+              "ChoicedStyle": "",
+              "NormalStyle": "",
+              "NormalSize": [300, 650]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "ClassName": "CardWidget",
+      "Category": "CW",
+      "Setting": {
+        "Rect": [600, 400, 1200, 750],
+	"BackgroundPixUrl":"./RESOURCE/Image_90033.png",
+        "Style": "color:rgb(255,255,255);border-radius:5px;font-family:楷体;font-size:25px;",
+        "Title": "卡牌信息栏"
+      },
+      "Contains": [
+        {
+          "ClassName": "ToolWidget",
+          "Category": "OW",
+          "Setting": {
+            "Rect": [480, 0, 720, 50],
+	    "Style":"background-color:rgb(250,250,250);border-radius:10px;",
+	   "BackgroundPixUrl":"./RESOURCE/Image_90035.png",
+            "Init": true
+          }
+        },
+        {
+          "ClassName": "CardInfoWidget",
+          "Category": "OW",
+          "Setting": {
+            "Rect": [0, 0, 480, 700],
+	    "Style":"background-color:rgba(220,220,220,0.1);",
+            "Init": true
+          }
+        },
+        {
+          "ClassName": "CardHubWidget",
+          "Category": "OW",
+          "Setting": {
+            "Rect": [480, 50, 720, 700],
+            "Init": true,
+            "CardBoxGroup": {
+              "NormalSize": [170, 338]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

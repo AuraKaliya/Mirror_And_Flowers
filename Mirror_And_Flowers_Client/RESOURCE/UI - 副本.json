@@ -1,0 +1,66 @@
+{
+    "UI": [
+        {
+            "ClassName": "MainWidget",
+            "Category": "CW",
+            "Setting": {
+                "Rect": [0, 0, 1600, 900],
+                "Style": "",
+                "Title": "Mirror And Flowers"
+            },
+            "Contains": [
+                {
+                    "ClassName": "HeadWidget",
+                    "Category": "OW",
+                    "Setting": {
+                        "Rect": [0, 0, 450, 150],
+                        "Init": true
+                    }
+                },
+                {
+                    "ClassName": "ClickLabel",
+                    "Category": "OW",
+                    "Setting": {
+                        "Rect": [500, 0, 400, 150],
+                        "Instruction": "",
+                        "Title": "匹配",
+                        "BackgroundPixUrl": ""
+                    }
+                },
+                {
+                    "ClassName": "ToolListWidget",
+                    "Category": "OW",
+                    "Setting": {
+                        "Rect": [1000, 20, 500, 100],
+                        "Init": true,
+                        "LabelGroup": [
+                            {
+                                "LabelClass": "OpenLabel",
+                                "LabelLink": "UserInfoWidget",
+                                "IconUrl": "./RESOURCE/Image_90001.png"
+                            },
+                            {
+                                "LabelClass": "OpenLabel",
+                                "LabelLink": "CharacterWidget",
+                                "IconUrl": "./RESOURCE/Image_90002.png"
+                            },
+                            {
+                                "LabelClass": "OpenLabel",
+                                "LabelLink": "CardWidget",
+                                "IconUrl": "./RESOURCE/Image_90003.png"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "ClassName": "TalkWidget",
+                    "Category": "OW",
+                    "Setting": {
+                        "Rect": [0, 450, 450, 375],
+                        "Init": true
+                    }
+                }
+            ]
+        }
+    ]
+}
